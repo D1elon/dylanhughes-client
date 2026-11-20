@@ -5,8 +5,8 @@
 //
 // While either value is empty the portal runs as a demo that keeps everything in the visitor's own browser.
 window.PORTAL_CONFIG = {
-  supabaseUrl: '',
-  supabaseKey: '',
+  supabaseUrl: 'https://xhrognwsamspkcyjmlos.supabase.co',
+  supabaseKey: 'sb_publishable_bLp6Glz4sO2WdCGJlXCx8w_cfE8TD_9',
   owner: 'Dylan',
   home: 'https://dylanhughes.dev',
 };

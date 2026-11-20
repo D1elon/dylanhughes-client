@@ -1,0 +1,16 @@
+{
+  "name": "dylanhughes-client",
+  "private": true,
+  "type": "module",
+  "description": "Client portal for dylanhughes.dev: private spaces opened with a code.",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "watch": "node tools/build.mjs --watch",
+    "serve": "node tools/serve.mjs"
+  },
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.119.2",
+    "esbuild": "^0.28.2",
+    "three": "^0.187.0"
+  }
+}

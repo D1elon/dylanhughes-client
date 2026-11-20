@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Client portal · Dylan Hughes</title>
+  <meta name="description" content="Private spaces for Dylan Hughes' clients, friends and family.">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#06070A">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/portal.css">
+  <script>
+    // Motion is on unless the visitor asked their device for less.
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('motion');
+  </script>
+</head>
+<body>
+  <a class="skip" href="#view">Skip to content</a>
+  <header class="site-header" id="header">
+    <div class="wrap header-row">
+      <a class="wordmark" href="/" aria-label="Dylan Hughes, client portal">
+        <span class="wordmark-mark" aria-hidden="true"></span>
+        <span>Dylan Hughes</span>
+      </a>
+      <span class="header-tag mono" id="header-tag">Client portal</span>
+      <div class="header-tools" id="header-tools"></div>
+    </div>
+  </header>
+  <main id="view" tabindex="-1">
+    <div class="boot" id="boot">
+      <span class="led" aria-hidden="true"></span>
+      <span class="mono">Opening the portal</span>
+    </div>
+    <noscript><div class="wrap"><p class="lede" style="padding-block: 96px">The portal needs JavaScript to open a private space.</p></div></noscript>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p class="mono">Private space. Please keep your code to yourself.</p>
+      <p class="mono"><a href="https://dylanhughes.dev" id="home-link" rel="noopener">dylanhughes.dev</a></p>
+    </div>
+  </footer>
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+  <script src="/js/config.js"></script>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
